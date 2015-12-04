@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>New Web Project</title>
+		<style type="text/css">
+			@import "http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/dijit.css";		
+			@import "http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojox/layout/resources/RotatorContainer.css";
+			#bgpane1 {
+				color:#FFF;
+			}
+			#bgpane2 {
+				background:url('http://wwwdev.kmooc.kr/asset-v1:SNUk+SNU046.101k+2015+type@asset+block@%ED%80%B4%EC%A6%88%EC%95%880.png') no-repeat 0 0;
+				color:#FFF;
+			}
+			#bgpane3 {
+				background:url('http://wwwdev.kmoocs.kr/asset-v1:SNUk+SNU046.101k+2015+type@asset+block@%ED%80%B4%EC%A6%88%EC%95%88%EB%82%B41.png') no-repeat 0 0;
+				color:#FFF;
+			}
+			#bgpane4 {
+				color:#FFF;
+			}
+			#bgpane5 {
+				background:url('http://wwwdev.kmooc.kr/asset-v1:SNUk+SNU046.101k+2015+type@asset+block@%ED%83%90%EA%B5%AC1.png') no-repeat 0 0;
+				color:#FFF;
+			}
+			#bgpane6 {
+				background:url('http://wwwdev.kmooc.kr/asset-v1:SNUk+SNU046.101k+2015+type@asset+block@%ED%83%90%EA%B5%AC2.png') no-repeat 0 0;
+				color:#FFF;
+			}
+			#bgpane7 {
+				background:url('http://wwwdev.kmooc.kr/asset-v1:SNUk+SNU046.101k+2015+type@asset+block@%ED%83%90%EA%B5%AC3.png') no-repeat 0 0;
+				color:#FFF;
+			}
+			#bgpane8 {
+				background:url('http://wwwdev.kmooc.kr/asset-v1:SNUk+SNU046.101k+2015+type@asset+block@%ED%83%90%EA%B5%AC4.png') no-repeat 0 0;
+				color:#FFF;
+			}
+		
+			#pane4 h1, #pane4 p {
+				background-color:#000;
+				opacity:0.8;
+			}
+			
+			#myMembership {
+				width:500px; height:320px;
+			}					
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js" djConfig="parseOnLoad:true, isDebug:true" type="text/javascript"></script>
+    </head>
+    <body style="margin: 0px;">
+		<script type="text/javascript">
+			dojo.require("dojo.parser");
+			dojo.require("dijit.form.Button");
+			dojo.require("dojox.layout.RotatorContainer");
+			dojo.require("dijit.layout.ContentPane");
+			dojo.require("dijit.form.ComboBox");
+		</script>
+		
+		<div style="float:left;padding:0 0 0 0;">
+	
+			<div dojoType="dojox.layout.RotatorContainer" id="myMembership" showTabs="true" cycles="8" suspendOnHover="true" autoStart="true" transitionDelay="5000" transition="fade">
+	
+				<div dojoType="dojox.layout.RotatorPager"><b style="text-align: center">
+					<button dojoType="dijit.form.Button" dojoAttachPoint="previous" >이전</button>
+					<span dojoAttachPoint="current"></span> / <span dojoAttachPoint="total"></span>
+					<button dojoType="dijit.form.Button" dojoAttachPoint="next">다음</button>
+					<button dojoType="dijit.form.ToggleButton" dojoAttachPoint="playPause"></button></b>
+				</div>
+	
+				<div id="bgpane1" dojoType="dijit.layout.ContentPane" title="1">
+					<br/><br/><br/><br/><br/>
+					<h2 style="color: rgb(0, 0, 0);text-align: center;">1. 퀴즈 응시 방법</h2>
+				</div>
+				<div id="bgpane2" dojoType="dijit.layout.ContentPane" title="2"></div>
+				<div id="bgpane3" dojoType="dijit.layout.ContentPane" title="3"></div>
+				<div id="bgpane4" dojoType="dijit.layout.ContentPane" title="4">
+					<br/><br/><br/><br/><br/>
+					<h2 style="color: rgb(0, 0, 0);text-align: center;">2. 탐구활동 응시 방법</h2>
+				</div>
+				<div id="bgpane5" dojoType="dijit.layout.ContentPane" title="5"></div>
+				<div id="bgpane6" dojoType="dijit.layout.ContentPane" title="6"></div>
+				<div id="bgpane7" dojoType="dijit.layout.ContentPane" title="7"></div>
+				<div id="bgpane8" dojoType="dijit.layout.ContentPane" title="8"></div>
+	
+			</div>
+	
+		</div>
+	
+		<div style="clear:both;"></div>
+    </body>
+</html>
